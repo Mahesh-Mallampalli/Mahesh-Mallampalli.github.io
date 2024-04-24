@@ -1,0 +1,28 @@
+.contact {
+    width: 80%;
+    padding: 25px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+ }
+
+ .contact-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .social {
+    display: flex;
+ }
+
+.mail,
+ .github,
+ .linkedin {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+ }

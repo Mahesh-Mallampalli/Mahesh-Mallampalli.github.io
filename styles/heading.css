@@ -1,0 +1,25 @@
+/*---------------------Heading----------------*/
+.heading {
+    width: 100%;
+    display: flex;
+    scroll-margin-top: 100px;
+}
+.heading-text {
+    min-width: fit-content;
+    padding: 0px 40px;
+}
+
+.divider {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.divider::after {
+    content: '';
+    flex: auto;
+    margin-right: 40px;
+    height: 1px;
+    top: 50%;
+    background: black;
+}
+/*---------------------------------------------*/

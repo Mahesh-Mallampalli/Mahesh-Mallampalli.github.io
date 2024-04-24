@@ -1,0 +1,95 @@
+/*----------------About-me---------------------*/
+.about-me{
+    width: 80%;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      padding: 60px 40px;
+    }
+}
+
+.about-me-skills {
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+    @media (max-width: 450px) {
+        align-items: center;
+    }
+}
+
+.about-me-skills-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 40%;
+    gap: 20px;
+}
+
+.about-me-skills-grid > * {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(153, 153, 153, 0.2) ;
+    color: #666;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px gray;
+}
+
+.one {
+   grid-row: 1;
+   grid-column: 1;
+}
+.two{
+    grid-row: 1;
+    grid-column: 2;
+}
+.three{
+    grid-row: 1;
+    grid-column: 3;
+}
+.four {
+    grid-row: 1;
+    grid-column: 4;
+    @media (max-width: 450px) {
+        grid-row: 4;
+        grid-column: 3;
+      }
+}
+.five {
+    grid-row: 2;
+    grid-column: 1;
+}
+.six {
+    grid-row: 2;
+    grid-column: 2;
+}
+.seven {
+    grid-row: 2;
+    grid-column: 3;
+}
+.eight {
+    grid-row: 3;
+    grid-column: 1;
+}
+.nine {
+    grid-row: 3;
+    grid-column: 2;
+}
+.ten {
+    grid-row: 3;
+    grid-column: 3;
+}
+.eleven {
+    grid-row: 4;
+    grid-column: 1;
+}
+.twelve {
+    grid-row: 4;
+    grid-column: 2;
+}
+/*----------------------------*/

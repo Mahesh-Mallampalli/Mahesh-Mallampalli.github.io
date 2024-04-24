@@ -1,1 +1,210 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/heading.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script  src="onClick.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-desktop">
+                <a class="headerItem" href="#introduction">Home</a>
+                <a class="headerItem" href="#about">About</a>
+                <a class="headerItem" href="#experience">Experience</a>
+                <a class="headerItem" href="#projects">Projects</a>
+                <a class="headerItem" href="#contact">Contact</a>
+            </div>
+            <div class="header-mobile">
+                <button class="header-menu" onclick=onClick()>
+                    <img src="images/menu_1.png" alt="menu" class="header-menu-icon">
+                </button>
+            </div>
+        </div>
+        <div id="side-nav" class="header-side-nav">
+            <button  id="close-btn" class="header-nav-close" onclick=onClickClose()>X</button>
+            <a class="headerSideNavItem" href="#introduction" onclick=onClickClose()>Home</a>
+            <a class="headerSideNavItem" href="#about" onclick=onClickClose()>About</a>
+            <a class="headerSideNavItem" href="#experience" onclick=onClickClose()>Experience</a>
+            <a class="headerSideNavItem" href="#projects" onclick=onClickClose()>Projects</a>
+            <a class="headerSideNavItem" href="#contact" onclick=onClickClose()>Contact</a>
+        </div>
+        <div class="main">
+            <div class="intro" id="introduction">
+                <div class="intro-text">
+                    <p> Hi, I'm </p>
+                    <p class="intro-text-name"> Mallampalli Maheswarnath</p>
+                    <p class="intro-text-about"> I architect and develop scalable web applications.</p>
+                    <p> I'm a full-time software engineer with a passion for efficient code and problem-solving.
+                    </p>
+                    <a class="btnLink" href="mailto: maheshmallampalli09@gmail.com">Let's get in touch!</a>
+                </div>
+                <img src="images/profileImage.jpg" alt="Profile Picture" class="intro-profile-img">
+            </div>
+            <div id="about" class="heading">
+                <h4 class="heading-text"> ABOUT ME </h4>
+                <div class="divider"></div>
+            </div>
+            <div class="about-me">
+                <div class="about-me-text">
+                    <h2>Get to know me!</h2>
+                    <p> Hello! I'm Mallampalli Maheswarnath, a passionate software engineer with a knack for
+                        turning ideas into reality through code.
+                        <br></br>
+                        My journey in the world of software engineering
+                        has been an exciting one, filled with learning, challenges, and growth. I thrive on
+                        tackling complex problems and turning them into simple and efficient code.
+                        <br></br>
+                        I thrive in dynamic environments where innovation and
+                        collaboration are valued. Whether it's building scalable and efficient systems or
+                        crafting user-friendly interfaces, I always strive for excellence in everything I do.
+                        <br></br>
+                        When I'm not coding, you can find me exploring the outdoors, watching movies, listening
+                        to music, or playing sports. I believe in maintaining a healthy work-life balance and
+                        enjoy pursuing hobbies that enrich my life both personally and professionally.
+                        <br></br>
+                        I'm always eager to take on new challenges and contribute to projects that have a
+                        positive impact. Let's build something amazing together!
+                    </p>
+                </div>
+                <div class="about-me-skills">
+                    <div>
+                        <h2>My Skills</h2>
+                        <div class="about-me-skills-grid">
+                            <div class="one">C/C++</div>
+                            <div class="two">JavaScript</div>
+                            <div class="three">TypeScript</div>
+                            <div class="four">HTML</div>
+                            <div class="five">CSS</div>
+                            <div class="six">ReactJs</div>
+                            <div class="seven">NextJs</div>
+                            <div class="eight">Java</div>
+                            <div class="nine">Python</div>
+                            <div class="ten">GraphQL</div>
+                            <div class="eleven">Git</div>
+                            <div class="twelve">Storybook</div>
+                        </div>
+                    </div>
+                    <a class="btnLink" target="_blank" href="resume.pdf">View Resume</a>
+                </div>
+            </div>
+            <div id="experience" class="heading">
+                <h4 class="heading-text"> EXPERIENCE </h4>
+                <div class="divider"></div>
+            </div>
+            <div class="experience">
+                <a id="experience-dropdown-2" class="experience-dropdown-2" href="#experience-dropdown-2">
+                    <div>Graduate Engineer Intern</div>
+                </a>
+                <a id="experience-dropdown-1" class="experience-dropdown-1" href="#experience-dropdown-1">
+                    <div>Software Engineer I</div>
+                </a>
+                <div class="experience-text-1">
+                    <a class="experience-title" href="https://www.chegg.com"> Chegg Inc. </a>
+                    <p class="experience-location"> Remote (Delhi, India) </p>
+                    <p class="experience-time"> July 2022 - Present </p>
+                    <ul style="color: #111111;">
+                        <li> Developing chegg signed out pages with having 1+ million page views using Next.js
+                            and maintaining their performance consistent.<br></br>
+                        </li>
+                        <li> Develop UI components on storybook for better component testing and documentations.
+                            <br></br>
+                        </li>
+                        <li> Build the backend system apis using GraphQL with data content storage on Contentful
+                            CMS and deploy on AWS.<br></br>
+                        </li>
+                        <li> Uses New Relic tool to analyse and fixes the different performance, memory and
+                            production issues.<br></br>
+                        </li>
+                        <li> Actively contributing to demos, code reviews, system design, deployments to
+                            maintain the project deliveries on time.<br></br>
+                        </li>
+                        <li> Mentoring and provides the technical expertise to engineering folks in the
+                            project.
+                        </li>
+                    </ul>
+                </div>
+                <div class="experience-text-2">
+                    <a class="experience-title" href="https://www.chegg.com"> Chegg Inc. </a>
+                    <p class="experience-location"> Remote (Delhi, India) </p>
+                    <p class="experience-time"> Jan 2022 - July 2022</p>
+                    <ul style="color: #111111;">
+                        <li> Build reusable and interactive web component using React.
+                            <br></br>
+                        </li>
+                        <li> Developed component to simplify the process of sharing web pages across different social
+                            media platforms.<br></br>
+                        </li>
+                        <li> Integrated Gladly chat support on our services.<br></br>
+                        </li>
+                        <li> Improved LCP and FCP scores of Chegg pages using Image pre-loading and lazy-loading
+                            techniques. <br></br>
+                        </li>
+                        <li>Fixed accessibility issues,
+                            improved test coverage, worked on adding features like directional property for text to
+                            render the Arabic content correctly.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="projects" class="heading">
+                <h4 class="heading-text"> PROJECTS </h4>
+                <div class="divider"></div>
+            </div>
+            <div class="projects">
+
+                <h3>Student Fee Tracker App</h3>
+                <div style="padding:0px 20px 10px">
+                    <p>Designed and developed an android app to keep record of students and their fee record.</p>
+                    <p>Languages/Tools: Dart, Flutter, Android Studio, Google firestore.</p>
+                </div>
+                <h3>Text Recognition using CNN</h3>
+                <div style="padding:0px 20px 10px">
+                    <p> Improving text recognition for images that contain both printed and handwritten text using CNN.
+                    </p>
+                    <p> Languages/Tools: Python, Keras, google colab </p>
+                </div>
+                <h3>Human vs Computer interactive checkers game.</h3>
+                <div style="padding-left:20px">
+                    <p>I have developed this game to learn the working of MinMax algorithm with alpha-beta pruning. </p>
+                    <p>Languages/Tools: Java, Java swing, IntelliJ. </p>
+                </div>
+            </div>
+            <div class="heading">
+                <h4 class="heading-text"> CONTACT </h4>
+                <div class="divider"></div>
+            </div>
+            <div id="contact" class="contact">
+                <div class="contact-text">
+                    <p>Have a project in mind or just want to say hello? I'd love to hear from you!
+                    </p>
+                    <p style="color: #333"> Feel free to reach out via email or connect with me on social media. I'm
+                        always excited to
+                        collaborate on new opportunities and projects. </p>
+                </div>
+                <div class="social">
+                    <a class="mail" href="mailto: maheshmallampalli09@gmail.com">
+                        <img src="images//Email_Black.svg" alt="Icon" class="icon">
+                    </a>
+                    <a class="github" href="https://github.com/Mahesh-Mallampalli">
+                        <img src="images/github-dark.svg" alt="Icon" class="icon">
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/mallampalli-maheswarnath/">
+                        <img src="images/linkedin-dark.svg" alt="Icon" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

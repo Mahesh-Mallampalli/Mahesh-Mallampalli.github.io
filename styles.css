@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.profile-info {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.content {
+    width: 100vw;
+}
+
+/*Header*/
+.header {
+    right: 0;
+    width: 100%;
+    background: black;
+    position: fixed;
+    display: flex;
+    padding: 32px;
+    justify-content: flex-end;
+}
+
+.header-desktop {
+    display: flex;
+    width:max-content;
+    @media(max-width: 600px){
+        display: none;
+    }
+}
+
+.header-mobile {
+    @media(min-width: 601px){
+        display: none;
+    }
+}
+
+
+.header-menu {
+   background: white;
+   width:28px;
+   height:28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-menu-icon {
+    width:36px;
+    height:36px;
+}
+
+.header-nav-close {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: solid 2px;
+  
+    margin: 20px;
+}
+
+.header-side-nav {
+    display: flex;
+    flex-direction:column;
+    background-color: black;
+    width: 0px;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    gap: 20px;
+}
+
+.headerSideNavItem {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.headerItem {
+   margin: 0px 30px;
+   color: white;
+   text-decoration: none;
+}
+
+.headerItem::after {
+   content: '';
+   display: block;
+   height: 2px;
+   width: 100%;
+   background-color: white;   
+   opacity: 0;
+}
+
+.headerItem:hover::after {
+   opacity: 1;
+ }
+
+/*----------------------*/
+
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   overflow: hidden;
+   font-size: 18px;
+   padding-top: 100px;
+}
+
